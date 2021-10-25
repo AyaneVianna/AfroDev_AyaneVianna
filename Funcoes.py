@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 # leitura dos dados dos arquivos
 df_atletas = pd.read_excel("C:\Desenvolvedora\AfroDev_AyaneVianna\Arquivos Excel\Athletes.xlsx")
 df_treinadores = pd.read_excel("C:\Desenvolvedora\AfroDev_AyaneVianna\Arquivos Excel\Coaches.xlsx")
@@ -11,7 +10,6 @@ def divisao_texto():
     print('\n')
     print('*'*135)
     print('\n')
-
 #Funções das perguntas
 def total_atletas():
     num_atletas = len(df_atletas.index)
@@ -112,7 +110,6 @@ def esporte_menos_times():
     esporte_min_times = times_esporte.idxmin()
     num_times = times_esporte.min()
     print(f'O esporte com menos times é {esporte_min_times}, tendo {num_times} time(s) nas olimpíadas. ')
-
 #Funções de conclusão e retorno
 def conclusao_retorno():
     print(f'Gostaria de ver mais informações sobre as Olimpíadas? \nSe sim, digite 1. Se não, digite 2.')
